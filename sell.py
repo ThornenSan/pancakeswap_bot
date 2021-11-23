@@ -30,7 +30,7 @@ def sell():
     # Get BNB Balance
     balance = web3.eth.get_balance(address["sender_address"])
     humanReadable = web3.fromWei(balance, 'ether')
-    print(humanReadable)
+    print("BNB Balance : ", humanReadable)
 
     # Contract id is the new token we are swaping to
     contract_id = web3.toChecksumAddress(
